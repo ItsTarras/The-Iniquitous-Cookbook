@@ -1,0 +1,62 @@
+.title-container
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.title
+{
+    /* Alignment of the content */
+    position: absolute;
+    z-index: 10;
+    
+    /* padding the space inside */
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    
+
+    /* Set a background alpha channel */
+    /*Give it a frosted glass effect*/
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+
+    /*Border settings*/
+    border-radius: 10px;
+    border-width: 1.2px;
+    border-color: rgb(41, 24, 1);
+    border-style:solid;
+
+    /*Text properties */
+    color: white;
+}
+
+.title-background
+{
+    /* alignment of the content */
+    position: absolute;
+    z-index: 1;
+
+    /* padding the space inside */
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    /* Set the shape options */
+    border-radius: 10px;
+    border-width: 1.2px;
+    border-color: rgba(0, 0, 255, 0.7);
+    border-style:solid;
+
+    /* set the background image */
+    background-image: url("images/fire.gif");
+    background-size:contain;
+
+    /* set the text colour invisible so we can retain the same box size, but not double up the text. */
+    color: transparent;
+}
