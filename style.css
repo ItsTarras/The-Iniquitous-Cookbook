@@ -1,3 +1,8 @@
+*
+{
+    background-color: rgba(225, 208, 83, 0.1);
+}
+
 .title-container
 {
     display: flex;
@@ -33,6 +38,7 @@
 
     /*Text properties */
     color: white;
+    font-size: 40px;
 }
 
 .title-background
@@ -59,4 +65,63 @@
 
     /* set the text colour invisible so we can retain the same box size, but not double up the text. */
     color: transparent;
+    font-size: 40px;
+}
+
+
+
+.tag-slider-container
+{
+    background-color: rgba(120, 153, 34, 0.5);
+    position: fixed;
+    right: -20%; /* hidden by default using 15% as a decent value. */
+    top: 0;
+    width: 20%;
+    height: 100%;
+    transition: right 0.5s ease; /* sliding animation */
+    border-style: solid;
+    border-color: beige;
+    box-sizing: border-box;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* I fucking LOVE BOX SHADOWS. *INSERT SPONGEBOB MEME* */
+    /*Make the width animated to move to the left a little, up to a maximum of 15% */
+}
+
+.tag-slider-container.open {
+    right: 0; /* Set the right value to the default so it appears from the right with no inverse. (NOT HIDDEN ANYMORE) God I suck at writing documentation. */
+}
+
+.tab-button-container
+{
+    position: absolute;
+    display: inline-block;
+    left: -40px;
+    top: 20px;
+}
+
+
+
+.tab-button {
+  background-image: url("images/hamburger.png");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid beige;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.tag-content {
+  padding: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.tag-content p {
+  margin: 10px 0;
 }
